@@ -33,6 +33,7 @@ TG_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
 TG_CHAT = os.getenv("TELEGRAM_CHAT_ID", "")
 DISCORD_URL = os.getenv("DISCORD_WEBHOOK_URL", "")
 DISCORD_LOGS_URL = os.getenv("DISCORD_LOGS_WEBHOOK_URL", "")
+DISCORD_SUPPORT_URL = os.getenv("DISCORD_SUPPORT_WEBHOOK_URL", "")
 SLACK_URL = os.getenv("SLACK_WEBHOOK_URL", "")
 PUBLIC_URL = os.getenv("PUBLIC_URL", "").rstrip("/")
 PORT = int(os.getenv("PORT", 8080))
@@ -230,6 +231,33 @@ def send_discord_log(content, embeds=None):
         return True
     except Exception as e:
         print(f"Discord logs error: {e}")
+        return False
+
+
+def send_support_alert(title, description, severity="warning"):
+    """Envía al canal de SOPORTE cuando algo necesita atención humana
+    (acción de alta criticidad ejecutada, fallo de integración, dato sospechoso)."""
+    if not DISCORD_SUPPORT_URL:
+        return None
+    color = {"info": 0x2563d6, "warning": 0xb8801f, "critical": 0xc43232}.get(severity, 0xb8801f)
+    try:
+        payload = {
+            "username": "Scuffers Soporte",
+            "content": f"@here — atención requerida",
+            "embeds": [{
+                "title": f"🆘 {title}",
+                "description": description[:2000],
+                "color": color,
+                "footer": {"text": f"severity: {severity}"},
+                "timestamp": datetime.utcnow().isoformat(),
+            }],
+        }
+        body = json.dumps(payload).encode()
+        req = urllib.request.Request(DISCORD_SUPPORT_URL, data=body, headers=DISCORD_HEADERS)
+        urllib.request.urlopen(req, timeout=8)
+        return True
+    except Exception as e:
+        print(f"Discord support error: {e}")
         return False
 
 
@@ -608,6 +636,21 @@ def execute_action():
         log_embeds.append(ship_embed)
 
     send_discord_log(f"⚡ Ejecución registrada", embeds=log_embeds)
+
+    # Si la acción es crítica (>€1000 o afecta VIPs), avisamos al canal de soporte
+    if action_full and (action_full.get("euros_at_risk", 0) >= 1000 or action_full.get("vips_affected", 0) > 0):
+        sev = "critical" if action_full.get("euros_at_risk", 0) >= 1500 else "warning"
+        send_support_alert(
+            title=f"Acción crítica ejecutada · {action_label}",
+            description=(
+                f"**{target_label}**\n"
+                f"Operador: **{current_user() or 'anónimo'}** ({ROLES.get(current_role(), {}).get('label', '?')})\n"
+                f"💸 €{action_full.get('euros_at_risk', 0):.0f} en riesgo · 💰 €{action_full.get('euros_recoverable', 0):.0f} recuperables\n"
+                f"{('🛡️ ' + str(action_full['vips_affected']) + ' VIP(s) afectado(s)') if action_full.get('vips_affected') else ''}\n\n"
+                f"_Verificar que el equipo correspondiente toma seguimiento._"
+            ),
+            severity=sev,
+        )
 
     # ACTUALIZAR EL PANEL PINNEADO (Discord + Telegram) con el nuevo contador
     panel = _load_panel()
