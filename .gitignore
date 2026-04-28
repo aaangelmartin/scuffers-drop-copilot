@@ -16,3 +16,9 @@ build/
 out/_cache/
 out/_shipping_cache.json
 out/_panel.json
+
+# Remotion video build artifacts
+video/node_modules/
+video/.env
+video/build/
+video/dist/
