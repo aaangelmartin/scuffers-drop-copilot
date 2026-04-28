@@ -1,0 +1,64 @@
+{
+  "do_nothing": {
+    "oversells": 34,
+    "euros_lost": 3375.03,
+    "vips_hurt": 2,
+    "vips_hurt_ids": [
+      "CUS-2004",
+      "CUS-2033"
+    ],
+    "affected_orders": [
+      "ORD-10492",
+      "ORD-10534",
+      "ORD-10434",
+      "ORD-10521",
+      "ORD-10449",
+      "ORD-10471",
+      "ORD-10407",
+      "ORD-10513",
+      "ORD-10451",
+      "ORD-10527",
+      "ORD-10424",
+      "ORD-10455",
+      "ORD-10442",
+      "ORD-10511",
+      "ORD-10410",
+      "ORD-10458",
+      "ORD-10505",
+      "ORD-10540",
+      "ORD-10555",
+      "ORD-10480",
+      "ORD-10456",
+      "ORD-10472",
+      "ORD-10417",
+      "ORD-10517",
+      "ORD-10536",
+      "ORD-10460",
+      "ORD-10466",
+      "ORD-10558",
+      "ORD-10489",
+      "ORD-10411",
+      "ORD-10444",
+      "ORD-10568",
+      "ORD-10533",
+      "ORD-10530"
+    ],
+    "brand_risk": "high"
+  },
+  "execute_plan": {
+    "oversells": 0,
+    "euros_lost": 168.75,
+    "vips_hurt": 0,
+    "oversells_avoided": 34,
+    "euros_recovered": 3206.28,
+    "vips_protected": 2,
+    "brand_risk": "low"
+  },
+  "delta": {
+    "euros_saved": 3206.28,
+    "oversells_avoided": 34,
+    "vips_protected": 2,
+    "brand_risk_reduction": "high → low"
+  },
+  "narrative": "Sin actuar en los próximos 120 min, Scuffers perdería €3375 (34 oversells y 2 VIPs heridos). Ejecutando este plan, la pérdida cae a €169: se salvan €3206 y se protege al 100% de los VIPs en riesgo."
+}

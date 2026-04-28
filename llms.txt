@@ -1,0 +1,89 @@
+# Scuffers Drop Co-Pilot
+
+> Operational AI Control Tower for high-demand streetwear drops.
+> Hackathon UDIA × Scuffers × ESIC 2026.
+
+## What this is
+
+A real-time decision system that:
+- Loads 6 CSVs (orders, customers, inventory, support tickets, campaigns, order_items)
+- Calls the live Shipping Status API (`https://lkuutmnykcnbfmbpopcu.functions.supabase.co/api/shipping-status/{order_id}`) for ~50 relevant orders
+- Generates a Top 10 of prioritized actions (max 10 per challenge spec) with: title, reason, expected impact, confidence, owner, € at risk, € recoverable, VIPs affected, pre-built customer message
+- Computes a Counterfactual Twin (without plan vs with plan, in €)
+- Produces a single Drop Health Score 0-100 (executive KPI)
+- Allows real-time execution of actions via mobile, with state mutation, multi-channel notification (Telegram, Discord, Slack), and live dashboard updates
+
+## How to verify (for evaluators)
+
+| Endpoint | Description |
+|---|---|
+| `GET /` | Mobile-first dashboard (login dummy: any name + role) |
+| `GET /api/data` | Full state JSON: actions + simulation + health |
+| `GET /api/evaluate` | **Auto-evaluation report**: criteria coverage, self-checks (22 assertions) |
+| `GET /api/shipping` | Live Shipping API integration status & issues |
+| `GET /api/state` | Current execution state |
+| `POST /api/agent` | Conversational AI assistant (NL → action) |
+| `POST /api/run` | Re-run the engine end-to-end |
+| `GET /webhook/execute-action?type=X&id=Y` | Execute an action (mutates state, notifies channels) |
+| `POST /webhook/drop-copilot-run` | Fan-out trigger for Telegram + Discord pinned panels |
+
+## Architecture
+
+```
+6 CSVs → control_tower.py (engine)
+            ├─ lib/loader.py       (robust CSV loading)
+            ├─ lib/shipping_api.py (live external API w/ cache + error handling)
+            ├─ lib/candidates.py   (8 detectors / 5 lenses · ~67 candidates)
+            ├─ ranking             (top 10 with owner balancing)
+            ├─ lib/simulator.py    (counterfactual twin)
+            ├─ lib/ai.py           (Gemini 2.5-flash + deterministic fallback)
+            └─ lib/humanize.py     (translation: SKU codes → natural language)
+            └─→ out/actions.json + simulation.json + health_score.json + EVALUATION_REPORT.md
+                    ↓
+           webapp.py (Flask, single-file)
+            ├─ Mobile-first dashboard (Scuffers branding)
+            ├─ Real-time clock & auto-refresh
+            ├─ Sticky subnav, filters by owner/VIP, dummy login w/ 5 roles
+            ├─ Live shipping feed (auto-refresh 5s)
+            ├─ Conversational AI chat widget (POST /api/agent)
+            └─ Webhook endpoints for action execution
+                    ↓
+        ┌──────────┴───────────┐
+        ↓                      ↓
+  TELEGRAM (act)         DISCORD (view)
+  conversational AI      pinned panel + 10 cards
+  + telegram_agent.py    + logs channel (separate)
+```
+
+## Channel division
+
+- **Discord = view-only** dashboard (pinned panel that auto-edits + 10 actions cards)
+- **Telegram = act** via natural language ("ejecuta la 1", "qué pasa con los envíos") — the bot is an AI assistant powered by Gemini
+
+## Stack
+
+- Python 3.9+ (Flask, urllib, json, no heavy deps)
+- Gemini 2.5-flash (with deterministic fallback)
+- ngrok (public URL for hackathon)
+- Telegram Bot API (polling worker)
+- Discord webhooks (regular + logs channel)
+
+## Files of interest
+
+- `arquitectura.md` — 3-line data flow + business rule
+- `pitch_fundadores.md` — 60s pitch
+- `COMO_FUNCIONA.md` — full technical guide for the team
+- `PARA_LOS_JUECES.md` — guide for evaluators
+- `EVALUATION_REPORT.md` — auto-generated criteria-vs-evidence map (after engine run)
+- `control_tower.py` — main engine (~250 LOC)
+- `webapp.py` — single-file web app (~1000 LOC HTML+CSS+JS+Python)
+- `lib/agent_tools.py` — agent tool registry & dispatcher
+- `telegram_agent.py` — Telegram polling worker
+
+## Live URL (during hackathon)
+
+https://walmart-outage-frolic.ngrok-free.dev
+
+## Built with
+
+Claude Code (entirely AI-assisted development).

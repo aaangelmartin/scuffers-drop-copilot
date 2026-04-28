@@ -1,0 +1,21 @@
+sku,producto,talla,color,stock,precio_eur,drop_id
+SCF-HOOD-BLK-S,Scuffers Classic Hoodie,S,Black,12,89.00,DROP-04
+SCF-HOOD-BLK-M,Scuffers Classic Hoodie,M,Black,3,89.00,DROP-04
+SCF-HOOD-BLK-L,Scuffers Classic Hoodie,L,Black,0,89.00,DROP-04
+SCF-HOOD-BLK-XL,Scuffers Classic Hoodie,XL,Black,7,89.00,DROP-04
+SCF-HOOD-CRM-S,Scuffers Classic Hoodie,S,Cream,5,89.00,DROP-04
+SCF-HOOD-CRM-M,Scuffers Classic Hoodie,M,Cream,0,89.00,DROP-04
+SCF-HOOD-CRM-L,Scuffers Classic Hoodie,L,Cream,2,89.00,DROP-04
+SCF-TEE-WHT-S,Scuffers Box Logo Tee,S,White,25,45.00,DROP-04
+SCF-TEE-WHT-M,Scuffers Box Logo Tee,M,White,18,45.00,DROP-04
+SCF-TEE-WHT-L,Scuffers Box Logo Tee,L,White,0,45.00,DROP-04
+SCF-TEE-WHT-XL,Scuffers Box Logo Tee,XL,White,11,45.00,DROP-04
+SCF-TEE-BLK-S,Scuffers Box Logo Tee,S,Black,30,45.00,DROP-04
+SCF-TEE-BLK-M,Scuffers Box Logo Tee,M,Black,4,45.00,DROP-04
+SCF-TEE-BLK-L,Scuffers Box Logo Tee,L,Black,1,45.00,DROP-04
+SCF-CAP-BLK-OS,Scuffers 6-Panel Cap,OS,Black,40,35.00,DROP-04
+SCF-CAP-CRM-OS,Scuffers 6-Panel Cap,OS,Cream,22,35.00,DROP-04
+SCF-PNT-BLK-M,Scuffers Cargo Pants,M,Black,8,120.00,DROP-04
+SCF-PNT-BLK-L,Scuffers Cargo Pants,L,Black,0,120.00,DROP-04
+SCF-PNT-BLK-XL,Scuffers Cargo Pants,XL,Black,3,120.00,DROP-04
+SCF-JKT-CAM-M,Scuffers Camo Jacket,M,Camo,2,180.00,DROP-04

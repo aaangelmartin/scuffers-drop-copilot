@@ -1,0 +1,17 @@
+{
+  "score": 69,
+  "verdict": "WARNING",
+  "components": {
+    "stock_health": 86,
+    "customer_health": 75,
+    "pipeline_health": 80,
+    "campaign_health": 25
+  },
+  "weights": {
+    "stock_health": 0.3,
+    "customer_health": 0.3,
+    "pipeline_health": 0.2,
+    "campaign_health": 0.2
+  },
+  "narrative": "El drop necesita atención: la puntuación está en 69 sobre 100. La parte más débil ahora mismo es las campañas, hay que actuar primero ahí."
+}

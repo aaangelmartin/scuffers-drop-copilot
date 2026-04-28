@@ -1,0 +1,1723 @@
+{
+  "count": 68,
+  "candidates": [
+    {
+      "action_type": "pause_campaign",
+      "target_id": "CMP-778",
+      "owner": "marketing",
+      "score": 97.5,
+      "confidence": 0.9,
+      "euros_at_risk": 2079.0,
+      "euros_recoverable": 1683.99,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-778",
+        "source": "tiktok",
+        "target_sku": "HOODIE-BLK-M",
+        "target_city": "Madrid",
+        "intensity": "very_high",
+        "available": 2,
+        "reserved": 32,
+        "pending_orders": 12,
+        "units_short": 10,
+        "budget_spent": 4200.0,
+        "traffic_growth": 3.8
+      },
+      "rank": 1,
+      "title": "Pausar campaña CMP-778 antes de oversell masivo",
+      "reason": "Campaña tiktok con intensidad very_high apuntando a HOODIE-BLK-M en Madrid. Stock disponible: 2 vs reservas 32. 12 pedidos pendientes y 10 unidades cortas.",
+      "expected_impact": "Evita oversells y protege presupuesto malgastado en SKU sin stock.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "pause_campaign",
+        "target_id": "CMP-778",
+        "rank": 1
+      },
+      "target_label": "Campaña Tiktok · Madrid · Black Hoodie · talla M",
+      "action_label": "Pausar campaña",
+      "owner_label": "Marketing",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "prevent_oversell",
+      "target_id": "ZIP-BLK-M",
+      "owner": "logistics",
+      "score": 84.0,
+      "confidence": 0.95,
+      "euros_at_risk": 1251.01,
+      "euros_recoverable": 1010.19,
+      "vips_affected": 1,
+      "evidence": {
+        "sku": "ZIP-BLK-M",
+        "product_name": "Black Zip Hoodie",
+        "available": 6,
+        "reserved": 37,
+        "incoming": 0,
+        "incoming_eta": null,
+        "pending_orders": 15,
+        "units_short": 9,
+        "vips_in_pending": [
+          "CUS-2033"
+        ],
+        "has_quick_restock": false,
+        "unit_price": 79.9
+      },
+      "rank": 2,
+      "title": "Bloquear venta de ZIP-BLK-M para evitar refunds",
+      "reason": "SKU ZIP-BLK-M (Black Zip Hoodie): 6 disponibles vs 37 reservas y 15 pedidos pendientes. 9 unidades cortas. VIPs entre afectados: 1.",
+      "expected_impact": "Evita devoluciones masivas y protege experiencia de cliente.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "prevent_oversell",
+        "target_id": "ZIP-BLK-M",
+        "rank": 2
+      },
+      "target_label": "Black Zip Hoodie · talla M",
+      "action_label": "Bloquear venta",
+      "owner_label": "Logística",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5505",
+      "owner": "customer_care",
+      "score": 100,
+      "confidence": 0.9,
+      "euros_at_risk": 473.91,
+      "euros_recoverable": 341.22,
+      "vips_affected": 1,
+      "evidence": {
+        "ticket_id": "TCK-5505",
+        "order_id": "ORD-10460",
+        "customer_id": "CUS-2033",
+        "is_vip": true,
+        "ltv": 2119.55,
+        "channel": "instagram_dm",
+        "urgency": "high",
+        "sentiment": "negative",
+        "message": "Me preocupa que se agote y no recibirme el pedido."
+      },
+      "rank": 3,
+      "title": "Escalar ticket TCK-5505 a revisión humana urgente",
+      "reason": "Ticket TCK-5505 canal instagram_dm: urgencia high, sentimiento negative. VIP=True, LTV €2120. Mensaje: \"Me preocupa que se agote y no recibirme el pedido.\"",
+      "expected_impact": "Resolución rápida de incidencia con sentimiento negativo.",
+      "pre_built_message": "Hola, hemos escalado tu consulta a un humano que va a darte respuesta en menos de 30 min.",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "escalate_ticket",
+        "target_id": "TCK-5505",
+        "rank": 3
+      },
+      "target_label": "Ticket #5505",
+      "action_label": "Escalar a humano",
+      "owner_label": "Atención al Cliente",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "pause_campaign",
+      "target_id": "CMP-779",
+      "owner": "marketing",
+      "score": 83.0,
+      "confidence": 0.9,
+      "euros_at_risk": 1633.5,
+      "euros_recoverable": 1323.14,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-779",
+        "source": "tiktok",
+        "target_sku": "TEE-WHT-S",
+        "target_city": "Barcelona",
+        "intensity": "high",
+        "available": 2,
+        "reserved": 40,
+        "pending_orders": 17,
+        "units_short": 15,
+        "budget_spent": 3100.0,
+        "traffic_growth": 3.1
+      },
+      "rank": 4,
+      "title": "PAUSA INMEDIATA: Campaña TikTok CMP-779 para TEE-WHT-S en Barcelona",
+      "reason": "La campaña CMP-779 está generando un tráfico masivo (+3.1x) para la TEE-WHT-S en Barcelona, con solo 2 unidades disponibles frente a 40 reservadas y 17 pedidos pendientes. Esto nos deja con un déficit de 15 unidades, poniendo en riesgo €1633.5 en posibles oversells.",
+      "expected_impact": "Evitar 15 oversells y recuperar €1323.14 en ventas, redirigiendo el tráfico a productos con stock. Protegemos la experiencia del cliente y la reputación de la marca.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "pause_campaign",
+        "target_id": "CMP-779",
+        "rank": 4
+      },
+      "target_label": "Campaña Tiktok · Barcelona · White Essential Tee · talla S",
+      "action_label": "Pausar campaña",
+      "owner_label": "Marketing",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "prevent_oversell",
+      "target_id": "HOODIE-BLK-M",
+      "owner": "logistics",
+      "score": 93.33333333333334,
+      "confidence": 0.95,
+      "euros_at_risk": 819.0,
+      "euros_recoverable": 661.34,
+      "vips_affected": 0,
+      "evidence": {
+        "sku": "HOODIE-BLK-M",
+        "product_name": "Black Hoodie",
+        "available": 2,
+        "reserved": 32,
+        "incoming": 0,
+        "incoming_eta": null,
+        "pending_orders": 12,
+        "units_short": 10,
+        "vips_in_pending": [],
+        "has_quick_restock": false,
+        "unit_price": 69.9
+      },
+      "rank": 5,
+      "title": "Bloquear venta de HOODIE-BLK-M para evitar refunds",
+      "reason": "SKU HOODIE-BLK-M (Black Hoodie): 2 disponibles vs 32 reservas y 12 pedidos pendientes. 10 unidades cortas. VIPs entre afectados: 0.",
+      "expected_impact": "Evita devoluciones masivas y protege experiencia de cliente.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "prevent_oversell",
+        "target_id": "HOODIE-BLK-M",
+        "rank": 5
+      },
+      "target_label": "Black Hoodie · talla M",
+      "action_label": "Bloquear venta",
+      "owner_label": "Logística",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5516",
+      "owner": "customer_care",
+      "score": 100,
+      "confidence": 0.9,
+      "euros_at_risk": 299.17,
+      "euros_recoverable": 215.41,
+      "vips_affected": 1,
+      "evidence": {
+        "ticket_id": "TCK-5516",
+        "order_id": "ORD-10567",
+        "customer_id": "CUS-2004",
+        "is_vip": true,
+        "ltv": 1245.87,
+        "channel": "instagram_dm",
+        "urgency": "urgent",
+        "sentiment": "negative",
+        "message": "Es un regalo y necesito confirmación de entrega."
+      },
+      "rank": 6,
+      "title": "Escalar ticket TCK-5516 a revisión humana urgente",
+      "reason": "Ticket TCK-5516 canal instagram_dm: urgencia urgent, sentimiento negative. VIP=True, LTV €1246. Mensaje: \"Es un regalo y necesito confirmación de entrega.\"",
+      "expected_impact": "Resolución rápida de incidencia con sentimiento negativo.",
+      "pre_built_message": "Hola, hemos escalado tu consulta a un humano que va a darte respuesta en menos de 30 min.",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "escalate_ticket",
+        "target_id": "TCK-5516",
+        "rank": 6
+      },
+      "target_label": "Ticket #5516",
+      "action_label": "Escalar a humano",
+      "owner_label": "Atención al Cliente",
+      "confidence_word": "alta",
+      "shipping_info": {
+        "shipping_status": "in_transit",
+        "delay_risk": 0.15,
+        "delay_reason": null,
+        "estimated_delivery_date": "2026-05-03",
+        "requires_manual_review": false,
+        "delivery_attempts": 0,
+        "human": "📦 En tránsito · ETA 2026-05-03"
+      },
+      "data_source": "scoring + shipping_api"
+    },
+    {
+      "action_type": "prevent_oversell",
+      "target_id": "TEE-WHT-S",
+      "owner": "logistics",
+      "score": 95.29411764705883,
+      "confidence": 0.95,
+      "euros_at_risk": 703.5,
+      "euros_recoverable": 568.08,
+      "vips_affected": 0,
+      "evidence": {
+        "sku": "TEE-WHT-S",
+        "product_name": "White Essential Tee",
+        "available": 2,
+        "reserved": 40,
+        "incoming": 30,
+        "incoming_eta": "2026-04-30T03:00:00+00:00",
+        "pending_orders": 17,
+        "units_short": 15,
+        "vips_in_pending": [],
+        "has_quick_restock": false,
+        "unit_price": 34.9
+      },
+      "rank": 7,
+      "title": "Bloquear venta de TEE-WHT-S para evitar refunds",
+      "reason": "SKU TEE-WHT-S (White Essential Tee): 2 disponibles vs 40 reservas y 17 pedidos pendientes. 15 unidades cortas. VIPs entre afectados: 0.",
+      "expected_impact": "Evita devoluciones masivas y protege experiencia de cliente.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "prevent_oversell",
+        "target_id": "TEE-WHT-S",
+        "rank": 7
+      },
+      "target_label": "White Essential Tee · talla S",
+      "action_label": "Bloquear venta",
+      "owner_label": "Logística",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "contact_customer",
+      "target_id": "CUS-2033",
+      "owner": "customer_care",
+      "score": 100,
+      "confidence": 0.85,
+      "euros_at_risk": 423.91,
+      "euros_recoverable": 252.23,
+      "vips_affected": 1,
+      "evidence": {
+        "customer_id": "CUS-2033",
+        "is_vip": true,
+        "ltv": 2119.55,
+        "segment": "vip_customer",
+        "preferred_city": "Murcia",
+        "risk_signals": [
+          "open_ticket",
+          "urgency_high",
+          "negative_sentiment"
+        ],
+        "broken_order_ids": [],
+        "tickets": [
+          {
+            "id": "TCK-5505",
+            "urgency": "high",
+            "sentiment": "negative",
+            "msg": "Me preocupa que se agote y no recibirme el pedido."
+          }
+        ]
+      },
+      "rank": 8,
+      "title": "Contactar proactivamente a CUS-2033",
+      "reason": "Cliente CUS-2033 (LTV €2120, segmento vip_customer). Señales de riesgo: open_ticket, urgency_high, negative_sentiment. Pedidos rotos: 0.",
+      "expected_impact": "Reduce churn de cliente alto-LTV mediante comunicación proactiva.",
+      "pre_built_message": "Hola, gracias por confiar en Scuffers ⚡. Hemos detectado un problema con tu pedido y queremos resolverlo antes de que te enteres. Te tendremos actualizado en las próximas 2h.",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "contact_customer",
+        "target_id": "CUS-2033",
+        "rank": 8
+      },
+      "target_label": "Cliente VIP · Murcia · LTV €2.120",
+      "action_label": "Contactar cliente",
+      "owner_label": "Atención al Cliente",
+      "confidence_word": "alta",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "contact_customer",
+      "target_id": "CUS-2004",
+      "owner": "customer_care",
+      "score": 100,
+      "confidence": 0.85,
+      "euros_at_risk": 249.17,
+      "euros_recoverable": 148.26,
+      "vips_affected": 1,
+      "evidence": {
+        "customer_id": "CUS-2004",
+        "is_vip": true,
+        "ltv": 1245.87,
+        "segment": "vip_customer",
+        "preferred_city": "Zaragoza",
+        "risk_signals": [
+          "open_ticket",
+          "urgency_urgent",
+          "negative_sentiment"
+        ],
+        "broken_order_ids": [],
+        "tickets": [
+          {
+            "id": "TCK-5516",
+            "urgency": "urgent",
+            "sentiment": "negative",
+            "msg": "Es un regalo y necesito confirmación de entrega."
+          }
+        ]
+      }
+    },
+    {
+      "action_type": "pause_campaign",
+      "target_id": "CMP-780",
+      "owner": "marketing",
+      "score": 78.51351351351352,
+      "confidence": 0.9,
+      "euros_at_risk": 1239.5,
+      "euros_recoverable": 1004.0,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-780",
+        "source": "instagram",
+        "target_sku": "ZIP-BLK-M",
+        "target_city": "Madrid",
+        "intensity": "high",
+        "available": 6,
+        "reserved": 37,
+        "pending_orders": 11,
+        "units_short": 5,
+        "budget_spent": 2600.0,
+        "traffic_growth": 2.5
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10568",
+      "owner": "operations",
+      "score": 95,
+      "confidence": 0.92,
+      "euros_at_risk": 91.9,
+      "euros_recoverable": 50.73,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10568",
+        "customer_id": "CUS-2083",
+        "is_vip": false,
+        "ltv": 0.0,
+        "shipping_status": "delayed",
+        "delay_risk": 0.883,
+        "delay_reason": "high_volume",
+        "estimated_delivery_date": "2026-04-30",
+        "requires_manual_review": true,
+        "delivery_attempts": 2,
+        "shipping_severity": 100,
+        "data_source": "shipping_api"
+      },
+      "rank": 9,
+      "title": "Revisar manualmente el pedido ORD-10568",
+      "reason": "Pedido ORD-10568 flags . Cliente con 0 devoluciones previas. Valor €0.",
+      "expected_impact": "Detecta fraude/ruido antes de envío.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "manual_review_order",
+        "target_id": "ORD-10568",
+        "rank": 9
+      },
+      "target_label": "Pedido #10568",
+      "action_label": "Revisar pedido manualmente",
+      "owner_label": "Operaciones",
+      "confidence_word": "alta",
+      "shipping_info": {
+        "shipping_status": "delayed",
+        "delay_risk": 0.883,
+        "delay_reason": "high_volume",
+        "estimated_delivery_date": "2026-04-30",
+        "requires_manual_review": true,
+        "delivery_attempts": 2,
+        "human": "📦 Retrasado · ⏰ riesgo retraso 88% · motivo: alto volumen · ETA 2026-04-30 · ⚠️ revisión manual requerida"
+      },
+      "data_source": "scoring + shipping_api"
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10425",
+      "owner": "operations",
+      "score": 95,
+      "confidence": 0.92,
+      "euros_at_risk": 91.9,
+      "euros_recoverable": 50.73,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10425",
+        "customer_id": "CUS-2060",
+        "is_vip": false,
+        "ltv": 416.42,
+        "shipping_status": "delayed",
+        "delay_risk": 0.757,
+        "delay_reason": "out_of_stock_at_hub",
+        "estimated_delivery_date": "2026-05-02",
+        "requires_manual_review": true,
+        "delivery_attempts": 2,
+        "shipping_severity": 100,
+        "data_source": "shipping_api"
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10553",
+      "owner": "operations",
+      "score": 95,
+      "confidence": 0.92,
+      "euros_at_risk": 91.9,
+      "euros_recoverable": 50.73,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10553",
+        "customer_id": "CUS-2052",
+        "is_vip": false,
+        "ltv": 146.1,
+        "shipping_status": "delayed",
+        "delay_risk": 0.817,
+        "delay_reason": "customs_hold",
+        "estimated_delivery_date": "2026-05-01",
+        "requires_manual_review": true,
+        "delivery_attempts": 2,
+        "shipping_severity": 100,
+        "data_source": "shipping_api"
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10407",
+      "owner": "operations",
+      "score": 95,
+      "confidence": 0.92,
+      "euros_at_risk": 81.9,
+      "euros_recoverable": 45.21,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10407",
+        "customer_id": "CUS-2043",
+        "is_vip": false,
+        "ltv": 0.0,
+        "shipping_status": "delayed",
+        "delay_risk": 0.807,
+        "delay_reason": "out_of_stock_at_hub",
+        "estimated_delivery_date": "2026-05-07",
+        "requires_manual_review": true,
+        "delivery_attempts": 1,
+        "shipping_severity": 100,
+        "data_source": "shipping_api"
+      }
+    },
+    {
+      "action_type": "redirect_campaign_budget",
+      "target_id": "CMP-778",
+      "owner": "marketing",
+      "score": 70,
+      "confidence": 0.65,
+      "euros_at_risk": 0,
+      "euros_recoverable": 800.0,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-778",
+        "current_target": "HOODIE-BLK-M",
+        "current_target_available": 2,
+        "suggested_target": "KNIT-NVY-M",
+        "suggested_target_available": 71,
+        "suggested_target_views": 1370,
+        "budget_spent": 4200.0,
+        "is_opportunity": true
+      },
+      "rank": 10,
+      "title": "Redirigir presupuesto de CMP-778 a SKU con stock disponible",
+      "reason": "Campaña CMP-778 apunta a HOODIE-BLK-M (stock 2). Sugerencia: redirigir a KNIT-NVY-M (71 unidades, 1370 vistas/h).",
+      "expected_impact": "Convierte presupuesto mal asignado en venta efectiva.",
+      "pre_built_message": "",
+      "automation_possible": true,
+      "automation_endpoint": "https://walmart-outage-frolic.ngrok-free.dev/webhook/execute-action",
+      "execution_payload": {
+        "action_type": "redirect_campaign_budget",
+        "target_id": "CMP-778",
+        "rank": 10
+      },
+      "target_label": "Campaña Tiktok · Madrid · Black Hoodie · talla M",
+      "action_label": "Redirigir presupuesto",
+      "owner_label": "Marketing",
+      "confidence_word": "media",
+      "data_source": "scoring"
+    },
+    {
+      "action_type": "redirect_campaign_budget",
+      "target_id": "CMP-779",
+      "owner": "marketing",
+      "score": 70,
+      "confidence": 0.65,
+      "euros_at_risk": 0,
+      "euros_recoverable": 800.0,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-779",
+        "current_target": "TEE-WHT-S",
+        "current_target_available": 2,
+        "suggested_target": "KNIT-NVY-M",
+        "suggested_target_available": 71,
+        "suggested_target_views": 1370,
+        "budget_spent": 3100.0,
+        "is_opportunity": true
+      }
+    },
+    {
+      "action_type": "redirect_campaign_budget",
+      "target_id": "CMP-780",
+      "owner": "marketing",
+      "score": 70,
+      "confidence": 0.65,
+      "euros_at_risk": 0,
+      "euros_recoverable": 800.0,
+      "vips_affected": 0,
+      "evidence": {
+        "campaign_id": "CMP-780",
+        "current_target": "ZIP-BLK-M",
+        "current_target_available": 6,
+        "suggested_target": "KNIT-NVY-M",
+        "suggested_target_available": 71,
+        "suggested_target_views": 1370,
+        "budget_spent": 2600.0,
+        "is_opportunity": true
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5504",
+      "owner": "customer_care",
+      "score": 93,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5504",
+        "order_id": "ORD-10452",
+        "customer_id": "CUS-2069",
+        "is_vip": false,
+        "ltv": 577.29,
+        "channel": "email",
+        "urgency": "high",
+        "sentiment": "negative",
+        "message": "Me preocupa que se agote y no recibirme el pedido."
+      }
+    },
+    {
+      "action_type": "restock_alert",
+      "target_id": "HOODIE-BLK-M",
+      "owner": "logistics",
+      "score": 74.75,
+      "confidence": 0.7,
+      "euros_at_risk": 0,
+      "euros_recoverable": 500.0,
+      "vips_affected": 0,
+      "evidence": {
+        "sku": "HOODIE-BLK-M",
+        "product_name": "Black Hoodie",
+        "available": 2,
+        "page_views": 4573,
+        "sell_through_rate": 0.825,
+        "incoming": 0
+      }
+    },
+    {
+      "action_type": "restock_alert",
+      "target_id": "ZIP-BLK-M",
+      "owner": "logistics",
+      "score": 72.53,
+      "confidence": 0.7,
+      "euros_at_risk": 0,
+      "euros_recoverable": 500.0,
+      "vips_affected": 0,
+      "evidence": {
+        "sku": "ZIP-BLK-M",
+        "product_name": "Black Zip Hoodie",
+        "available": 6,
+        "page_views": 3783,
+        "sell_through_rate": 0.751,
+        "incoming": 0
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5510",
+      "owner": "customer_care",
+      "score": 88,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5510",
+        "order_id": "ORD-10517",
+        "customer_id": "CUS-2049",
+        "is_vip": false,
+        "ltv": 597.08,
+        "channel": "instagram_dm",
+        "urgency": "urgent",
+        "sentiment": "neutral",
+        "message": "Me preocupa que se agote y no recibirme el pedido."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5513",
+      "owner": "customer_care",
+      "score": 85,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5513",
+        "order_id": "ORD-10552",
+        "customer_id": "CUS-2062",
+        "is_vip": false,
+        "ltv": 78.33,
+        "channel": "email",
+        "urgency": "high",
+        "sentiment": "negative",
+        "message": "Quiero cambiar la dirección antes de que salga."
+      }
+    },
+    {
+      "action_type": "prioritize_order",
+      "target_id": "ORD-10433",
+      "owner": "logistics",
+      "score": 81,
+      "confidence": 0.92,
+      "euros_at_risk": 41.9,
+      "euros_recoverable": 28.91,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10433",
+        "customer_id": "CUS-2047",
+        "is_vip": false,
+        "ltv": 69.96,
+        "shipping_status": "delayed",
+        "delay_risk": 0.685,
+        "delay_reason": "weather",
+        "estimated_delivery_date": "2026-05-03",
+        "requires_manual_review": false,
+        "delivery_attempts": 1,
+        "shipping_severity": 87,
+        "data_source": "shipping_api"
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5518",
+      "owner": "customer_care",
+      "score": 80,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5518",
+        "order_id": "ORD-10578",
+        "customer_id": "CUS-2095",
+        "is_vip": false,
+        "ltv": 0.0,
+        "channel": "chat",
+        "urgency": "urgent",
+        "sentiment": "neutral",
+        "message": "No veo movimiento en el envío desde hace horas."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5502",
+      "owner": "customer_care",
+      "score": 78,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5502",
+        "order_id": "ORD-10417",
+        "customer_id": "CUS-2070",
+        "is_vip": false,
+        "ltv": 596.26,
+        "channel": "email",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "message": "No veo movimiento en el envío desde hace horas."
+      }
+    },
+    {
+      "action_type": "contact_customer",
+      "target_id": "CUS-2069",
+      "owner": "customer_care",
+      "score": 75,
+      "confidence": 0.85,
+      "euros_at_risk": 57.73,
+      "euros_recoverable": 34.35,
+      "vips_affected": 0,
+      "evidence": {
+        "customer_id": "CUS-2069",
+        "is_vip": false,
+        "ltv": 577.29,
+        "segment": "at_risk_customer",
+        "preferred_city": "Palma",
+        "risk_signals": [
+          "open_ticket",
+          "urgency_high",
+          "negative_sentiment"
+        ],
+        "broken_order_ids": [],
+        "tickets": [
+          {
+            "id": "TCK-5504",
+            "urgency": "high",
+            "sentiment": "negative",
+            "msg": "Me preocupa que se agote y no recibirme el pedido."
+          }
+        ]
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5501",
+      "owner": "customer_care",
+      "score": 70,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5501",
+        "order_id": "ORD-10404",
+        "customer_id": "CUS-2057",
+        "is_vip": false,
+        "ltv": 45.14,
+        "channel": "instagram_dm",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "message": "Necesito saber si mi pedido llegará antes del viernes."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5509",
+      "owner": "customer_care",
+      "score": 70,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5509",
+        "order_id": "ORD-10515",
+        "customer_id": "CUS-2068",
+        "is_vip": false,
+        "ltv": 120.03,
+        "channel": "instagram_dm",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "message": "Es un regalo y necesito confirmación de entrega."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5515",
+      "owner": "customer_care",
+      "score": 70,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5515",
+        "order_id": "ORD-10556",
+        "customer_id": "CUS-2025",
+        "is_vip": false,
+        "ltv": 112.37,
+        "channel": "chat",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "message": "Necesito saber si mi pedido llegará antes del viernes."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5517",
+      "owner": "customer_care",
+      "score": 70,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5517",
+        "order_id": "ORD-10568",
+        "customer_id": "CUS-2083",
+        "is_vip": false,
+        "ltv": 0.0,
+        "channel": "instagram_dm",
+        "urgency": "high",
+        "sentiment": "neutral",
+        "message": "Me preocupa que se agote y no recibirme el pedido."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5508",
+      "owner": "customer_care",
+      "score": 65,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5508",
+        "order_id": "ORD-10509",
+        "customer_id": "CUS-2017",
+        "is_vip": false,
+        "ltv": 0.0,
+        "channel": "email",
+        "urgency": "low",
+        "sentiment": "negative",
+        "message": "He pagado express, necesito prioridad por favor."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5512",
+      "owner": "customer_care",
+      "score": 65,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5512",
+        "order_id": "ORD-10530",
+        "customer_id": "CUS-2066",
+        "is_vip": false,
+        "ltv": 121.76,
+        "channel": "email",
+        "urgency": "low",
+        "sentiment": "negative",
+        "message": "Es un regalo y necesito confirmación de entrega."
+      }
+    },
+    {
+      "action_type": "escalate_ticket",
+      "target_id": "TCK-5514",
+      "owner": "customer_care",
+      "score": 65,
+      "confidence": 0.9,
+      "euros_at_risk": 50.0,
+      "euros_recoverable": 36.0,
+      "vips_affected": 0,
+      "evidence": {
+        "ticket_id": "TCK-5514",
+        "order_id": "ORD-10553",
+        "customer_id": "CUS-2052",
+        "is_vip": false,
+        "ltv": 146.1,
+        "channel": "email",
+        "urgency": "medium",
+        "sentiment": "negative",
+        "message": "He pagado express, necesito prioridad por favor."
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10460",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 1,
+      "evidence": {
+        "order_id": "ORD-10460",
+        "customer_id": "CUS-2033",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10420",
+      "owner": "operations",
+      "score": 70,
+      "confidence": 0.7,
+      "euros_at_risk": 64.9,
+      "euros_recoverable": 27.26,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10420",
+        "customer_id": "CUS-2022",
+        "sku": "SWEAT-GRY-M",
+        "value": 64.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "high_returns",
+          "payment_review"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "contact_customer",
+      "target_id": "CUS-2049",
+      "owner": "customer_care",
+      "score": 60,
+      "confidence": 0.85,
+      "euros_at_risk": 59.71,
+      "euros_recoverable": 35.53,
+      "vips_affected": 0,
+      "evidence": {
+        "customer_id": "CUS-2049",
+        "is_vip": false,
+        "ltv": 597.08,
+        "segment": "loyal_customer",
+        "preferred_city": "Malaga",
+        "risk_signals": [
+          "open_ticket",
+          "urgency_urgent"
+        ],
+        "broken_order_ids": [],
+        "tickets": [
+          {
+            "id": "TCK-5510",
+            "urgency": "urgent",
+            "sentiment": "neutral",
+            "msg": "Me preocupa que se agote y no recibirme el pedido."
+          }
+        ]
+      }
+    },
+    {
+      "action_type": "contact_customer",
+      "target_id": "CUS-2070",
+      "owner": "customer_care",
+      "score": 60,
+      "confidence": 0.85,
+      "euros_at_risk": 59.63,
+      "euros_recoverable": 35.48,
+      "vips_affected": 0,
+      "evidence": {
+        "customer_id": "CUS-2070",
+        "is_vip": false,
+        "ltv": 596.26,
+        "segment": "loyal_customer",
+        "preferred_city": "Bilbao",
+        "risk_signals": [
+          "open_ticket",
+          "urgency_high"
+        ],
+        "broken_order_ids": [],
+        "tickets": [
+          {
+            "id": "TCK-5502",
+            "urgency": "high",
+            "sentiment": "neutral",
+            "msg": "No veo movimiento en el envío desde hace horas."
+          }
+        ]
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10543",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 179.8,
+      "euros_recoverable": 75.52,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10543",
+        "customer_id": "CUS-2022",
+        "sku": "KNIT-NVY-M",
+        "value": 179.8,
+        "quantity": 2,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10411",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 159.8,
+      "euros_recoverable": 67.12,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10411",
+        "customer_id": "CUS-2021",
+        "sku": "ZIP-BLK-M",
+        "value": 159.8,
+        "quantity": 2,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10451",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 139.8,
+      "euros_recoverable": 58.72,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10451",
+        "customer_id": "CUS-2049",
+        "sku": "HOODIE-BLK-M",
+        "value": 139.8,
+        "quantity": 2,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10419",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10419",
+        "customer_id": "CUS-2119",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 0
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10425",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10425",
+        "customer_id": "CUS-2060",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 2
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10466",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10466",
+        "customer_id": "CUS-2050",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 2
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10475",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10475",
+        "customer_id": "CUS-2014",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 2
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10548",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 79.9,
+      "euros_recoverable": 33.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10548",
+        "customer_id": "CUS-2109",
+        "sku": "ZIP-BLK-M",
+        "value": 79.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10441",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 72.9,
+      "euros_recoverable": 30.62,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10441",
+        "customer_id": "CUS-2082",
+        "sku": "HOODIE-CRM-L",
+        "value": 72.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10572",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 72.9,
+      "euros_recoverable": 30.62,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10572",
+        "customer_id": "CUS-2021",
+        "sku": "HOODIE-CRM-M",
+        "value": 72.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10513",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 69.9,
+      "euros_recoverable": 29.36,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10513",
+        "customer_id": "CUS-2021",
+        "sku": "HOODIE-BLK-M",
+        "value": 69.9,
+        "quantity": 1,
+        "status": "packed",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10468",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 64.9,
+      "euros_recoverable": 27.26,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10468",
+        "customer_id": "CUS-2049",
+        "sku": "SWEAT-GRY-M",
+        "value": 64.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10478",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 64.9,
+      "euros_recoverable": 27.26,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10478",
+        "customer_id": "CUS-2104",
+        "sku": "SWEAT-GRY-M",
+        "value": 64.9,
+        "quantity": 1,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10551",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 64.9,
+      "euros_recoverable": 27.26,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10551",
+        "customer_id": "CUS-2002",
+        "sku": "SWEAT-GRY-M",
+        "value": 64.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 0
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10436",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 59.9,
+      "euros_recoverable": 25.16,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10436",
+        "customer_id": "CUS-2022",
+        "sku": "JORTS-BLU-L",
+        "value": 59.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10437",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 59.9,
+      "euros_recoverable": 25.16,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10437",
+        "customer_id": "CUS-2053",
+        "sku": "JORTS-BLU-M",
+        "value": 59.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10497",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 59.9,
+      "euros_recoverable": 25.16,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10497",
+        "customer_id": "CUS-2082",
+        "sku": "JORTS-BLU-L",
+        "value": 59.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10576",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 59.9,
+      "euros_recoverable": 25.16,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10576",
+        "customer_id": "CUS-2109",
+        "sku": "JORTS-BLU-M",
+        "value": 59.9,
+        "quantity": 1,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10539",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 39.9,
+      "euros_recoverable": 16.76,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10539",
+        "customer_id": "CUS-2112",
+        "sku": "BAG-GRY-OS",
+        "value": 39.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 2
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10579",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 39.9,
+      "euros_recoverable": 16.76,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10579",
+        "customer_id": "CUS-2049",
+        "sku": "BAG-GRY-OS",
+        "value": 39.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10531",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 36.9,
+      "euros_recoverable": 15.5,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10531",
+        "customer_id": "CUS-2082",
+        "sku": "TEE-RED-L",
+        "value": 36.9,
+        "quantity": 1,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10570",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 36.9,
+      "euros_recoverable": 15.5,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10570",
+        "customer_id": "CUS-2098",
+        "sku": "TEE-RED-L",
+        "value": 36.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10410",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 34.9,
+      "euros_recoverable": 14.66,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10410",
+        "customer_id": "CUS-2079",
+        "sku": "TEE-WHT-S",
+        "value": 34.9,
+        "quantity": 1,
+        "status": "packed",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10454",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 34.9,
+      "euros_recoverable": 14.66,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10454",
+        "customer_id": "CUS-2053",
+        "sku": "TEE-WHT-S",
+        "value": 34.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10499",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 34.9,
+      "euros_recoverable": 14.66,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10499",
+        "customer_id": "CUS-2022",
+        "sku": "TEE-WHT-M",
+        "value": 34.9,
+        "quantity": 1,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10517",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 34.9,
+      "euros_recoverable": 14.66,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10517",
+        "customer_id": "CUS-2049",
+        "sku": "TEE-WHT-S",
+        "value": 34.9,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10552",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 34.9,
+      "euros_recoverable": 14.66,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10552",
+        "customer_id": "CUS-2062",
+        "sku": "TEE-WHT-M",
+        "value": 34.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 0
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10433",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 29.9,
+      "euros_recoverable": 12.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10433",
+        "customer_id": "CUS-2047",
+        "sku": "CAP-BLK-OS",
+        "value": 29.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 1
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10503",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 29.9,
+      "euros_recoverable": 12.56,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10503",
+        "customer_id": "CUS-2038",
+        "sku": "CAP-BLK-OS",
+        "value": 29.9,
+        "quantity": 1,
+        "status": "payment_review",
+        "flags": [
+          "payment_review"
+        ],
+        "customer_returns_count": 0
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10449",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 0.0,
+      "euros_recoverable": 0.0,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10449",
+        "customer_id": "CUS-2104",
+        "sku": "HOODIE-BLK-M",
+        "value": 0.0,
+        "quantity": 1,
+        "status": "paid",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    },
+    {
+      "action_type": "manual_review_order",
+      "target_id": "ORD-10521",
+      "owner": "operations",
+      "score": 55,
+      "confidence": 0.7,
+      "euros_at_risk": 0.0,
+      "euros_recoverable": 0.0,
+      "vips_affected": 0,
+      "evidence": {
+        "order_id": "ORD-10521",
+        "customer_id": "CUS-2021",
+        "sku": "HOODIE-BLK-M",
+        "value": 0.0,
+        "quantity": 1,
+        "status": "processing",
+        "flags": [
+          "high_returns"
+        ],
+        "customer_returns_count": 3
+      }
+    }
+  ]
+}

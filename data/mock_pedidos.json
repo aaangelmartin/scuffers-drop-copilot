@@ -1,0 +1,12 @@
+[
+  {"order_id":"SCF-1001","cliente":"laura.gomez@mail.com","sku":"SCF-HOOD-BLK-M","cantidad":1,"total_eur":89.00,"estado":"shipped","tracking":"SEUR-8821","fecha":"2026-04-26"},
+  {"order_id":"SCF-1002","cliente":"jaime.r@mail.com","sku":"SCF-TEE-WHT-L","cantidad":2,"total_eur":90.00,"estado":"processing","tracking":null,"fecha":"2026-04-27"},
+  {"order_id":"SCF-1003","cliente":"marc.v@mail.com","sku":"SCF-CAP-BLK-OS","cantidad":1,"total_eur":35.00,"estado":"delivered","tracking":"SEUR-8822","fecha":"2026-04-25"},
+  {"order_id":"SCF-1004","cliente":"sofia.l@mail.com","sku":"SCF-PNT-BLK-L","cantidad":1,"total_eur":120.00,"estado":"oversold","tracking":null,"fecha":"2026-04-28"},
+  {"order_id":"SCF-1005","cliente":"david.m@mail.com","sku":"SCF-HOOD-CRM-M","cantidad":1,"total_eur":89.00,"estado":"oversold","tracking":null,"fecha":"2026-04-28"},
+  {"order_id":"SCF-1006","cliente":"ana.p@mail.com","sku":"SCF-TEE-BLK-M","cantidad":1,"total_eur":45.00,"estado":"shipped","tracking":"SEUR-8823","fecha":"2026-04-27"},
+  {"order_id":"SCF-1007","cliente":"raul.t@mail.com","sku":"SCF-JKT-CAM-M","cantidad":1,"total_eur":180.00,"estado":"processing","tracking":null,"fecha":"2026-04-28"},
+  {"order_id":"SCF-1008","cliente":"clara.b@mail.com","sku":"SCF-HOOD-BLK-S","cantidad":1,"total_eur":89.00,"estado":"shipped","tracking":"SEUR-8824","fecha":"2026-04-26"},
+  {"order_id":"SCF-1009","cliente":"oscar.h@mail.com","sku":"SCF-TEE-WHT-M","cantidad":3,"total_eur":135.00,"estado":"delivered","tracking":"SEUR-8825","fecha":"2026-04-24"},
+  {"order_id":"SCF-1010","cliente":"nuria.s@mail.com","sku":"SCF-PNT-BLK-XL","cantidad":1,"total_eur":120.00,"estado":"shipped","tracking":"SEUR-8826","fecha":"2026-04-27"}
+]

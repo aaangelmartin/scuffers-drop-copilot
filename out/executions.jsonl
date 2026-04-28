@@ -1,0 +1,3 @@
+{"timestamp": "2026-04-28T18:03:40.032679Z", "type": "contact_customer", "target": "CUS-2033", "target_label": "Cliente VIP \u00b7 Murcia \u00b7 LTV \u20ac2.120", "action_label": "Contactar cliente", "rank": "8"}
+{"timestamp": "2026-04-28T18:04:01.239589Z", "type": "pause_campaign", "target": "CMP-778", "target_label": "Campa\u00f1a Tiktok \u00b7 Madrid \u00b7 Black Hoodie \u00b7 talla M", "action_label": "Pausar campa\u00f1a", "rank": "1"}
+{"timestamp": "2026-04-28T18:17:05.466081Z", "type": "escalate_ticket", "target": "TCK-5505", "target_label": "Ticket #5505", "action_label": "Escalar a humano", "rank": "3"}

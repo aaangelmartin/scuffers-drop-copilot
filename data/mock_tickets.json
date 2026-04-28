@@ -1,0 +1,17 @@
+[
+  {"ticket_id":"T-501","cliente":"laura.gomez@mail.com","canal":"instagram_dm","mensaje":"Hola! cuándo me llega el pedido SCF-1001? llevo 3 días esperando 🥲","prioridad":null,"categoria":null},
+  {"ticket_id":"T-502","cliente":"jaime.r@mail.com","canal":"email","mensaje":"He pedido la tee blanca talla L y me ha llegado mensaje de que no hay stock. ME devolvéis el dinero?","prioridad":null,"categoria":null},
+  {"ticket_id":"T-503","cliente":"@hypebeast_madrid","canal":"instagram_dm","mensaje":"BROOO el hoodie negro M cuándo vuelve?? necesito sí o sí para el finde","prioridad":null,"categoria":null},
+  {"ticket_id":"T-504","cliente":"sofia.l@mail.com","canal":"web_chat","mensaje":"Quiero cambiar la dirección de envío del pedido SCF-1004, me he mudado","prioridad":null,"categoria":null},
+  {"ticket_id":"T-505","cliente":"marc.v@mail.com","canal":"email","mensaje":"La gorra que pedí me queda enorme, cómo hago la devolución?","prioridad":null,"categoria":null},
+  {"ticket_id":"T-506","cliente":"david.m@mail.com","canal":"instagram_dm","mensaje":"oversold otra vez???? esto es una vergüenza, segunda vez que me pasa","prioridad":null,"categoria":null},
+  {"ticket_id":"T-507","cliente":"ana.p@mail.com","canal":"web_chat","mensaje":"Buenos días, qué tallaje me recomiendan para el hoodie? mido 1.70 y peso 60kg","prioridad":null,"categoria":null},
+  {"ticket_id":"T-508","cliente":"raul.t@mail.com","canal":"email","mensaje":"Hola, soy influencer (50k followers) y me gustaría colaborar con la marca","prioridad":null,"categoria":null},
+  {"ticket_id":"T-509","cliente":"clara.b@mail.com","canal":"instagram_dm","mensaje":"el tracking SEUR-8824 no me funciona, dice que no existe","prioridad":null,"categoria":null},
+  {"ticket_id":"T-510","cliente":"oscar.h@mail.com","canal":"email","mensaje":"factura del pedido SCF-1009 por favor, la necesito para empresa","prioridad":null,"categoria":null},
+  {"ticket_id":"T-511","cliente":"@kicks_bcn","canal":"instagram_dm","mensaje":"vais a sacar restock de los cargo pants?","prioridad":null,"categoria":null},
+  {"ticket_id":"T-512","cliente":"nuria.s@mail.com","canal":"web_chat","mensaje":"Mi pedido pone shipped pero no he recibido email de tracking","prioridad":null,"categoria":null},
+  {"ticket_id":"T-513","cliente":"anonimo@mail.com","canal":"email","mensaje":"Sois unos estafadores, llevo 2 semanas sin mi pedido y nadie responde. Voy a denunciaros","prioridad":null,"categoria":null},
+  {"ticket_id":"T-514","cliente":"@streetwear_es","canal":"instagram_dm","mensaje":"qué día exactamente sale el próximo drop?","prioridad":null,"categoria":null},
+  {"ticket_id":"T-515","cliente":"laura.gomez@mail.com","canal":"web_chat","mensaje":"Ya me llegó! gracias chicos, calidad top como siempre 🔥","prioridad":null,"categoria":null}
+]
