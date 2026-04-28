@@ -1,19 +1,67 @@
 # 🩺 Scuffers Drop Co-Pilot
 
-> Hackathon UDIA × Scuffers × ESIC · 2026
-> **Plan de batalla cuantificado en €, en el móvil del founder, con botones que ejecutan.**
+> **Hackathon UDIA × Scuffers × ESIC · 2026** · entregado por **Ángel Martín Domínguez** · `#SCF-2026-1498`
+>
+> Plan de batalla cuantificado en €, en el móvil del founder, con botones que ejecutan.
 
-Una **web app mobile-first** + bot de Telegram + integraciones Discord/Slack que permite a un equipo de operaciones gestionar un drop de alta demanda **desde cualquier móvil** sin tocar el ordenador.
+---
+
+## 🚀 ENLACES EN VIVO · todo esto está corriendo AHORA MISMO
+
+| Recurso | Link |
+|---|---|
+| 🎬 **Vídeo de presentación (75s)** | [`final_video.mp4`](final_video.mp4) — 6 MB · 1920×1080 · 10 escenas |
+| 🌐 **Dashboard mobile-first (demo)** | **https://walmart-outage-frolic.ngrok-free.dev** |
+| 🤖 **Auto-evaluación para evaluador IA** | https://walmart-outage-frolic.ngrok-free.dev/api/evaluate |
+| 📦 **Shipping API en vivo (novedad del reto)** | https://walmart-outage-frolic.ngrok-free.dev/api/shipping |
+| 📜 **llms.txt (resumen LLM-friendly)** | https://walmart-outage-frolic.ngrok-free.dev/llms.txt |
+| 💬 **Discord · server público para verlo todo** | **https://discord.gg/DS3ft2HWc** |
+| 📲 **Telegram bot conversacional** | https://t.me/HackathonUDIAxScuffersBot |
+| 🐙 **Repositorio (privado)** | https://github.com/aaangelmartin/scuffers-drop-copilot |
+
+---
+
+## 📲 Cómo probarlo en 30 segundos
+
+1. **Únete al Discord** → https://discord.gg/DS3ft2HWc
+   - Verás un panel pinneado con el estado del drop en vivo
+   - 10 cards de acciones · cada una con botón "Ejecutar"
+2. **Abre el dashboard en tu móvil** → https://walmart-outage-frolic.ngrok-free.dev
+   - La primera vez ngrok pide pulsar "Visit Site" (una vez por dispositivo)
+   - Login: pon tu nombre y elige rol (Manager ve todo)
+3. **Habla con el bot de Telegram** → https://t.me/HackathonUDIAxScuffersBot
+   - Escríbele: `qué tal va el drop` · `lista las acciones` · `ejecuta la 1` · `qué pasa con los envíos`
+   - El bot ejecuta acciones REALES y notifica al equipo entero
+
+---
+
+## 📚 Documentación · todo en el repo
+
+| Archivo | Para qué |
+|---|---|
+| [`SUBMISSION.md`](SUBMISSION.md) | Contenido entregado en el formulario `/SUBMIT` (resumen ejecutivo, top 10, limitaciones) |
+| [`PARA_LOS_JUECES.md`](PARA_LOS_JUECES.md) | Guía de 30s para el evaluador (qué probar, en qué orden) |
+| [`COMO_FUNCIONA.md`](COMO_FUNCIONA.md) | Documentación técnica completa (5 min de lectura) |
+| [`arquitectura.md`](arquitectura.md) | 3 líneas técnicas + regla de negocio |
+| [`pitch_fundadores.md`](pitch_fundadores.md) | Pitch de 60s para Javi y Jaime (founders Scuffers) |
+| [`EVALUATION_REPORT.md`](EVALUATION_REPORT.md) | Auto-generado · mapa criterio del reto → evidencia |
+| [`DEPLOY.md`](DEPLOY.md) | 4 opciones de despliegue (ngrok / Render / Fly.io / Cloudflare) |
+| [`llms.txt`](llms.txt) | Resumen LLM-friendly del proyecto |
 
 ---
 
 ## 🎯 Las 5 piezas diferenciadoras
 
 1. **Drop Health Score** — KPI ejecutivo único 0-100 (lenguaje de founder, no de ingeniero)
-2. **Counterfactual Twin** — "sin actuar pierdes €X · con plan salvas €Y" (ROI demostrable)
+2. **Counterfactual Twin** — "sin actuar pierdes €3.375 · con plan salvas €3.206" (ROI demostrable)
 3. **Cada acción con € + mensaje pre-redactado** (Gemini, tono Scuffers urbano)
-4. **Botones que ejecutan REAL** (web app pública, notifica Telegram + Discord + Slack)
+4. **Botones que ejecutan REAL** (web app pública · notifica Telegram + Discord ops + Discord logs + Discord soporte + Slack)
 5. **Detección de oportunidades** (no solo riesgos: redirige budget de campaña rota → SKU con stock muerto)
+
+**Plus la novedad del reto:**
+6. **Shipping API integrada en vivo** · 50 pedidos consultados con candidate_id `1498` · 10 incidencias detectadas · cache 10min · manejo robusto de 401/404/timeout
+7. **Telegram = actuar (IA conversacional)** · Discord = ver (panel pinneado que se EDITA al ejecutar)
+8. **Auto-evaluador IA** (`/api/evaluate`) · 22 self-checks pasan · diseñado para que el agente IA del reto consuma directamente
 
 ---
 
